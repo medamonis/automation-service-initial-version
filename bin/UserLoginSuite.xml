@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tests" parallel="false">
+
+	<!-- Start of UserLogin check with valid email & password -->
+
+	<test name="ValidateLoginWithValidData">
+		<parameter name="email" value="aaaaa@aaaaa.com" />
+		<parameter name="password" value="aaaaa@123" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.UserLoginController">
+				<methods>
+					<include name="processValidateLoginWithValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- End of UserLogin check with valid email & password -->
+
+
+	<!-- Start of UserLogin check with invalid format of email & password -->
+
+	<test name="ValidateLoginWithInvalidEmail">
+		<parameter name="email" value="aaaaaaaaaa.com" />
+		<parameter name="password" value="aaaaa@123" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.UserLoginController">
+				<methods>
+					<include name="processValidateLoginWithInvalidEmail" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- End of UserLogin check with invalid format of email & password -->
+
+
+	<!-- Start of UserLogin check with non registered email & password -->
+
+	<test name="ValidateLoginWithNonRegisteredEmail">
+		<parameter name="email" value="medamoniswetha5@gmail.com" />
+		<parameter name="password" value="aaaaa@123" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.UserLoginController">
+				<methods>
+					<include name="processValidateLoginWithNonRegisteredEmail" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- End of UserLogin check with non registered email & password -->
+
+
+	<!-- Start of UserLogin check with valid email & invalid password -->
+
+	<test name="ValidateLoginWithInvalidPassword">
+		<parameter name="email" value="aaaaa@aaaaa.com" />
+		<parameter name="password" value="aaaaa123" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.UserLoginController">
+				<methods>
+					<include name="processValidateLoginWithInvalidPassword" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- End of UserLogin check with valid email & invalid password -->
+
+	<!-- Start of ForgotPassword hyper link check -->
+
+	<test name="ValidateForgotPasswordLink">
+		<parameter name="email" value="null" />
+		<parameter name="password" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.UserLoginController">
+				<methods>
+					<include name="processValidateForgotPasswordLink" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- End of ForgotPassword hyper link check -->
+
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="tests" parallel="false">
+
+	<!-- Start of Adding an item to a cart check -->
+
+	<test name="ValidateAddToCart">
+		<parameter name="email" value="aaaaa@aaaaa.com" />
+		<parameter name="password" value="aaaaa@123" />
+		<parameter name="product"
+			value="Faded Short Sleeve T-shirts" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AddToCartController">
+				<methods>
+					<include name="processValidateAddToCart" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- End of Adding an item to a cart check -->
+
+</suite>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="tests" parallel="false">
+
+	<!-- Start of End to End test -->
+
+	<test name="EndToEndTestWithValidData">
+		<parameter name="email" value="swetha123@gmail.com" />
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mrs" />
+		<parameter name="fisrtName" value="Medamoni" />
+		<parameter name="lastName" value="Swetha" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="testing@123" />
+		<parameter name="date" value="1-1-1987" />
+		<parameter name="signUpForNewLetter" value="check" />
+		<parameter name="receiveSpecialOffers" value="check" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="Purple" />
+		<parameter name="addressFirstLine" value="Old Plaza" />
+		<parameter name="addressSecondLine" value="Street" />
+		<parameter name="city" value="Birmingham" />
+		<parameter name="State" value="Arizona" />
+		<parameter name="postalCode" value="12345" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo"
+			value="Test Additional Info" />
+		<parameter name="homePhone" value="9985998510" />
+		<parameter name="mobilePhone" value="1234567890" />
+		<parameter name="addressAlias" value="null" />
+		<parameter name="product"
+			value="Faded Short Sleeve T-shirts" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.EndToEndTestController">
+				<methods>
+					<include name="processEndToEndTestWithValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- End of End to End testing -->
+
+
+
+
+</suite>

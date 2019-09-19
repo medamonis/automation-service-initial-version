@@ -1,0 +1,2394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="tests" parallel="false">
+
+	<!-- FirstName Validation Start -->
+	<test name="validFirstName">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="Swetha" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateFirstNameValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvalidFirstNameWithSpecialCharacters">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="@#$" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateFirstNameWithSpecialCharacters" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvalidFirstNameWithOnlyNumerics">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="12345" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateFirstNameWithOnlyNumerics" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvalidFirstNameWithAlphaNumeric">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="swetha12345" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateFirstNameWithAlphaNumeric" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvalidFirstNameWithBlankData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateFirstNameWithBlankData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ValidFirstNameWithOnlySpaces">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value=" " />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateFirstNameWithOnlySpaces" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- FirstName Validation End -->
+	<!-- LastName Validation Start -->
+	<test name="validLastName">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="Medamoni" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateLastNameValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvalidLastNameWithSpecialCharacters">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="@#$" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateLastNameWithSpecialCharacters" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvalidLastNameWithOnlyNumerics">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="12345" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateLastNameWithOnlyNumerics" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvalidLastNameWithAlphaNumeric">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="Medamoni12345" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateLastNameWithAlphaNumeric" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InvalidLastNameWithBlankData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateLastNameWithBlankData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ValidLastNameWithOnlySpaces">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value=" " />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateLastNameWithOnlySpaces" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- LastName Validation End Email Field Validation Start -->
+	<test name="EmailValidation">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateEmail" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Email Field Validation End Password Field Validation Start -->
+	<test name="PasswordValidData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="12345" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidatePasswordValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="PasswordInvalidData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="123" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidatePasswordInvalidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="PasswordBlankData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="null" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidatePasswordBlankData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Password Field Validation End -->
+
+	<!-- FirstName Field under 'Your Address' Validation Start -->
+	<test name="AddressFirstNameAutoPopulateData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="FirstNameSwetha" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressFirstNameAutoPopulate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AddressFirstNameEditedData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="Swetha" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName"
+			value="EditedAddressFirstNameData" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressFirstNameEditableData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="AddressFirstNameOverwrittenData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="firstName" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName"
+			value="EditedToAddressFirstName" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressFirstNameOverwrittenData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="AddressFirstNameSpecialCharacters">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="firstName" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="(*$%^" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressFirstNameWithSpecialCharacters" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="AddressFirstNameWithOnlyNumerics">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="firstName" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="12345" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressFirstNameWithOnlyNumerics" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="AddressFirstNameWithAlphaNumerics">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="firstName" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="swetha12345" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressFirstNameWithAlphaNumeric" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="AddressFirstNameWithBlankData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="firstName" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressFirstNameWithBlankData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="AddressFirstNameWithOnlySpaces">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="firstName" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="   " />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressFirstNameWithOnlySpaces" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<!-- FirstName Field under 'Your Address' Validation End -->
+
+
+	<!-- LastName Field under 'Your Address' Validation Start -->
+
+	<test name="AddressLastNameAutoPopulateData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastNameSwetha" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressLastNameAutoPopulate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="AddressLastNameEditedData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="Swetha" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName"
+			value="EditedAddressLastNameData" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressLastNameEditableData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="AddressLastNameOverwrittenData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName"
+			value="EditedToAddressLastName" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressLastNameOverwrittenData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="AddressLastNameSpecialCharacters">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="(*$%^" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressLastNameWithSpecialCharacters" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="AddressLastNameWithOnlyNumerics">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="12345" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressLastNameWithOnlyNumerics" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="AddressLastNameWithAlphaNumerics">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="swetha12345" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressLastNameWithAlphaNumeric" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="AddressLastNameWithBlankData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressLastNameWithBlankData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="AddressLastNameWithOnlySpaces">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="   " />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressLastNameWithOnlySpaces" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- LastName Field under 'Your Address' Validation End -->
+
+	<!-- Address field under "Your Address" Validation Start -->
+
+	<test name="ValidateAddressWithValidData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="Testing address" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressWithValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="ValidateAddressWithoutData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressWithoutData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="processValidateAddressLengthyData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine"
+			value="Testing address field by giving more than 128 characters in the address field under YourAddress header hagsdf sjghjhasdf asdjfhfgasdf dasdjfgasdf dadsfjdgajsdf asdfjdhgajsdf sdfjdgjasdf " />
+		<!-- <parameter name=" addressSecondLine " value="null" /> -->
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressLengthyData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="processValidateAddressInvalidData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="%^£*()" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressInvalidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- Address field under "Your Address" Validation End -->
+
+	<!-- City field under "Your Address" Validation Start -->
+
+	<test name="ValidateCityWithValidData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="Testing City" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateCityWithValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="ValidateCityWithoutData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateCityWithoutData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="processValidateCityLengthyData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="null" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<!-- <parameter name=" addressSecondLine " value="null" /> -->
+		<parameter name="city"
+			value="Testing address field by giving more than 128 characters in the address field under YourAddress header hagsdf sjghjhasdf asdjfhfgasdf dasdjfgasdf dadsfjdgajsdf asdfjdhgajsdf sdfjdgjasdf" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateCityLengthyData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="processValidateCityInvalidData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="%^£*()" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateCityInvalidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- City field under "Your Address" Validation End -->
+
+
+	<!-- State field under "Your Address" Validation End -->
+
+	<test name="ValidateStateSelectingOption">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="Wyoming" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateStateSelectingOption" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateStateWithoutSelectingOption">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="-" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateStateWithoutSelectingOption" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ValidateStateSelectingNonexistingOption">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="abc" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateStateSelectingNonexistingOption" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- State field under "Your Address" Validation End -->
+
+
+	<!-- PostalCode field under "Your Address" Validation End -->
+
+	<test name="ValidatePostalCodeWithValidData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="12345" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidatePostalCodeWithValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="ValidatePostalCodeWithoutData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidatePostalCodeWithoutData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidatePostalCodeWithSpaces">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="  " />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidatePostalCodeWithSpaces" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidatePostalCodeWithAlphanumerics">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="B1 2TE" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidatePostalCodeWithAlphanumerics" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidatePostalCodeWithLessDigits">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="123" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidatePostalCodeWithLessDigits" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidatePostalCodeWithMoreDigits">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="123456" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidatePostalCodeWithMoreDigits" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<!-- PostalCode field under "Your Address" Validation End -->
+
+
+	<!-- Country field under "Your Address" Validation Start -->
+
+	<test name="ValidateCountryDefaultOption">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateCountryDefaultOption" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ValidateCountryValidOption">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="United States" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateCountryValidOption" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="ValidateCountryInvalidOption">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="-" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateCountryInvalidOption" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ValidateCountryNonExistingOption">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="United Kingdom" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateCountryNonExistingOption" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Country field under "Your Address" Validation End -->
+
+
+	<!-- Mobile Phone field under "Your Address" Validation Start -->
+
+	<test name="ValidateMobilePhoneWithValidData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="1234567890" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateMobilePhoneWithValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateMobilePhoneAndHomePhoneWithoutData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="" />
+		<parameter name="mobilePhone" value="" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateMobilePhoneAndHomePhoneWithoutData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateMobilePhoneWithoutDataAndHomePhoneWithData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="1234567890" />
+		<parameter name="mobilePhone" value="" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateMobilePhoneWithoutDataAndHomePhoneWithData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+	<test name="ValidateMobilePhoneWithLenghtyData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone"
+			value="1234567890123456789012345678901234567890" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateMobilePhoneWithLenghtyData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ValidateMobilePhoneWithAlphaNumeric">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="abc12345def" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateMobilePhoneWithAlphaNumeric" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ValidateMobilePhoneWithSpecialCharacters">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="$^%*" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateMobilePhoneWithSpecialCharacters" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- Mobile Phone field under "Your Address" Validation End -->
+
+	<!-- Address Alias field under "Your Address" Validation Start -->
+
+	<test name="processValidateAddressAliasDefaultValue">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressAliasDefaultValue" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ValidateAddressAliasWithDefaultData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressAliasWithDefaultData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateAddressAliasWithEdittedData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="Edited address alias" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressAliasWithEdittedData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateAddressAliasWithoutData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressAliasWithoutData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateAddressAliasWithLengthyData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias"
+			value="Lengthy data for testing address alias field, editted and removed previously existing data" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressAliasWithLengthyData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateAddressAliasWithOnlySpaces">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="   " />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressAliasWithOnlySpaces" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateAddressAliasWithSpecialCharacters">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="£$%^*" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressAliasWithSpecialCharacters" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateAddressAliasWithAlphaNumerics">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="Alpha1234Numericdata" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include
+						name="processValidateAddressAliasWithAlphaNumerics" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="ValidateAddressAliasWithOnlyNumbers">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mr" />
+		<parameter name="fisrtName" value="null" />
+		<parameter name="lastName" value="LastName" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="null" />
+		<parameter name="date" value="null" />
+		<parameter name="signUpForNewLetter" value="null" />
+		<parameter name="receiveSpecialOffers" value="null" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="null" />
+		<parameter name="addressFirstLine" value="null" />
+		<parameter name="addressSecondLine" value="null" />
+		<parameter name="city" value="null" />
+		<parameter name="State" value="null" />
+		<parameter name="postalCode" value="null" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo" value="null" />
+		<parameter name="homePhone" value="null" />
+		<parameter name="mobilePhone" value="null" />
+		<parameter name="addressAlias" value="123456" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateAddressAliasWithOnlyNumbers" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Address Alias field under "Your Address" Validation End -->
+
+
+	<!-- Start of Registration check with data in all the fields -->
+
+	<test name="ValidateRegistrationWithValidData">
+		<parameter name="isNewEmailRequired" value="true" />
+		<parameter name="title" value="Mrs" />
+		<parameter name="fisrtName" value="Swetha" />
+		<parameter name="lastName" value="Medamoni" />
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="password" value="testing" />
+		<parameter name="date" value="1-1-1987" />
+		<parameter name="signUpForNewLetter" value="check" />
+		<parameter name="receiveSpecialOffers" value="check" />
+		<parameter name="addressFisrtName" value="null" />
+		<parameter name="addressLastName" value="null" />
+		<parameter name="company" value="purple" />
+		<parameter name="addressFirstLine" value="Axis home" />
+		<parameter name="addressSecondLine" value="Old Street" />
+		<parameter name="city" value="Birmingham" />
+		<parameter name="State" value="Indiana" />
+		<parameter name="postalCode" value="12345" />
+		<parameter name="Country" value="null" />
+		<parameter name="AdditionalInfo"
+			value="Additional Info test data" />
+		<parameter name="homePhone" value="1234567890" />
+		<parameter name="mobilePhone" value="9985998510" />
+		<parameter name="addressAlias" value="null" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.AccountRegistrationController">
+				<methods>
+					<include name="processValidateRegistrationWithValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- End of Registration check with data in all the fields -->
+
+
+
+
+</suite>

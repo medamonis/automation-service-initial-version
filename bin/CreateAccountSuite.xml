@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="tests" parallel="false">
+
+	<test name="validEmail">
+		<parameter name="email" value="swetha123@gmail.com" />
+		<parameter name="isNewEmailRequired" value="true" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.CreateAccountController">
+				<methods>
+					<include name="processValidateEmailValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="uppercaseEmail">
+		<parameter name="email" value="SWETHA@gmail.com" />
+		<parameter name="isNewEmailRequired" value="true" />
+
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.CreateAccountController">
+				<methods>
+					<include name="processValidateEmailUppercaseData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="incorectFormatEmail">
+		<parameter name="email" value="swetha" />
+		<parameter name="isNewEmailRequired" value="true" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.CreateAccountController">
+				<methods>
+					<include name="processValidateEmailIncorrectFormat" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="emailWithSpaces">
+		<parameter name="email" value="  swetha  @gmail.com" />
+		<parameter name="isNewEmailRequired" value="true" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.CreateAccountController">
+				<methods>
+					<include name="processValidateEmailWithSpaces" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="blankData">
+		<parameter name="email" value="" />
+		<parameter name="isNewEmailRequired" value="false" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.CreateAccountController">
+				<methods>
+					<include name="processValidateEmailEmptyString" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="alreadyRegisteredEmail">
+		<parameter name="email" value="swetha@gmail.com" />
+		<parameter name="isNewEmailRequired" value="false" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.CreateAccountController">
+				<methods>
+					<include name="processValidateEmailExistingData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="emailWithSpecialCharacters">
+		<parameter name="email" value="*swetha*)@#gmail%.com" />
+		<parameter name="isNewEmailRequired" value="true" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.CreateAccountController">
+				<methods>
+					<include name="processValidateEmailSpecialSymbols" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="emailWithOnlyNumerics">
+		<parameter name="email" value="121131@gmail.com" />
+		<parameter name="isNewEmailRequired" value="true" />
+		<classes>
+			<class
+				name="com.davies.test.automation.controllers.CreateAccountController">
+				<methods>
+					<include name="processValidateEmailNumerics" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
