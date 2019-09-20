@@ -1,5 +1,11 @@
 Instructions to download project from GitHub:
-- 
+- Used Google-Chrome browser to upload the project to GitHub so I request recipient(s) to use in the same browser for easy access. 
+- Also, I have made the project visibility to the public for a hassle-free experience.
+
+1. Click the link in a browser https://github.com/medamonis/automation-service-initial-version
+2. Click on 'Clone or download' green button at right-side middle of the page.
+3. Next, click on 'Download zip', which saves to the local machine.
+4. Unzip the project file to see it's content. 
 
 
 Project Info:
@@ -9,7 +15,7 @@ Prerequisites:
 Technologies Used:
 -	Java version 8.0
 -	Selenium version 3.141.59
--	Log4j2 version 2.12.1
+- TestNG
 
 Observations noticed in the application:-
 
@@ -26,5 +32,4 @@ In the 'CreateAccount' page:-
 -	Also Min length is not defined for the Mobile & Home Phone number fields (app accepts even if user enter 1 digit)
 
 
-When county and state both of them are not chosen noticed error message as "This country requires you to choose a State"
 
